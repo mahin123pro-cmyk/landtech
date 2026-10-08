@@ -9,11 +9,13 @@ import VerificationDetails from './Pages/VerificationDetails.jsx'
 import DeedMaker from './Pages/DeedMaker.jsx'
 import Verification from './Pages/Verification.jsx'
 import TransferOwnerShip from './Pages/TransferOwnerShip.jsx'
+import Po from './Po.jsx'
 
 const rouet=createBrowserRouter([
   {
     path:"/",element:<App/>
   },
+  {path:"/po",element:<Po/>}
   {
   path:"/landinpage",element:<LandingPage/>},
  { path:"/verification",element:<Verification/>},
