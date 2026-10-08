@@ -24,7 +24,7 @@ app.get("/",(req,res)=>{
 })
 
 app.post("/api/deedsmaker",deedHashMaker)
-
+app.post("/api/deeddetails",deedDetails)
 
 app.post("/api/deedverification",deedverification)
 app.post("/api/deedverification/:id",deedDetails)

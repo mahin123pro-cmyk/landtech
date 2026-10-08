@@ -86,6 +86,6 @@ if(!(originalDeedHash.ownerWithDeedHash===ownerWithDeedHash)){
 }
 
 
-res.status(200).json({message:originalDeedHash.deedId})
+res.status(200).json({message:originalDeedHash})
 
 }
