@@ -11,7 +11,7 @@ import Verification from './Pages/Verification.jsx'
 import TransferOwnerShip from './Pages/TransferOwnerShip.jsx'
 import Po from './Po.jsx'
 
-const rouet=createBrowserRouter([
+const router=createBrowserRouter([
   {
     path:"/",element:<App/>
   },
@@ -34,6 +34,6 @@ const rouet=createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-<RouterProvider router={rouet} />
+<RouterProvider router={router} />
   </StrictMode>,
 )
