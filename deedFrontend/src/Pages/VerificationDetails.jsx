@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Deedqrcode from '../Deedqrcode'
+import { api } from '../api'
 
 const VerificationDetails=()=> {
   const {id}=useParams()
@@ -9,7 +10,7 @@ const VerificationDetails=()=> {
   const [details2,setDetails2]=useState({})
   useEffect(()=>{
 const data=async()=>{
- const res= await axios.post(`http://192.168.0.105:3000/api/deedverification/${id}`)
+ const res= await api.post(`/api/deedverification/${id}`)
 
  setDetails(res.data.message)
  console.log(res.data.message)
@@ -19,7 +20,7 @@ data()
   return (
     <div>
       <h1>{details.mouza}</h1>
-      <Deedqrcode url={`http://192.168.0.105:5173/verification/${id}`}/>
+      <Deedqrcode url={`${api}/verification/${id}`}/>
 
   <div>
     {

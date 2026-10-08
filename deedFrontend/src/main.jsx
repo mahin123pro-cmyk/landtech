@@ -13,11 +13,11 @@ import Po from './Po.jsx'
 
 const router=createBrowserRouter([
   {
-    path:"/",element:<App/>
+    path:"/",element:<LandingPage/>
   },
-  {path:"/po",element:<Po/>},
+
   
- { path:"/landinpage",element:<LandingPage/>},
+
  { path:"/verification",element:<Verification/>},
  {
   path:"/verification/:id",element:<VerificationDetails/>
