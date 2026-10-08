@@ -15,7 +15,7 @@ app.use(morgan("dev"))
 app.use(cors({
     origin:[
         "http://localhost:5173",
-        "https://landtech-indol.vercel.app"
+        "https://landtech-indol.vercel.appd"
     ],credentials:true
 }))
 
