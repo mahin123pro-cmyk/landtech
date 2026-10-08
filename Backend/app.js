@@ -14,6 +14,9 @@ app.use(morgan("dev"))
 
 app.use(cors())
 
+app.get("/",(req,res)=>{
+    res.send("Hello Bangladesh")
+})
 
 app.post("/api/deedsmaker",deedHashMaker)
 
