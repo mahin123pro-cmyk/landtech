@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import axios from 'axios'
 import { data, redirect, useNavigate } from 'react-router-dom';
+import { api } from '../api';
 
 function DeedMaker() {
   const navigate = useNavigate()
@@ -21,7 +22,7 @@ function DeedMaker() {
   const submitData = async () => {
     try {
 
-      const res = await axios.post("http://localhost:3000/api/deedsmaker", deeds);
+      const res = await api.post("/api/deedsmaker", deeds);
       console.log(res)
 
      

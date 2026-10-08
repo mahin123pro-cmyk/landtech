@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import inputImage from "../assets/input2.jpg"
 import axios from 'axios'
 import { data, redirect, useNavigate } from 'react-router-dom';
+import { api } from '../api';
 
 function Verification() {
   const navigate = useNavigate()
@@ -21,7 +22,7 @@ function Verification() {
   const submitData = async () => {
     try {
 
-      const res = await axios.post("http://localhost:3000/api/deedverification", deeds);
+      const res = await api.post(`/api/deedverification`, deeds);
       console.log(res)
 
       if (res.status === 200) {
