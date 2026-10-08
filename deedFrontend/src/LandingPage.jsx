@@ -26,10 +26,10 @@ const verificationNavigate=()=>{
 
   return (
     <div className=''>
-      <nav className='flex justify-between p-3 fixed left-0 right-0 bg-white z-10'>
-        <h1 className='text-blue-950 font-bold text-xl'>Land Verification</h1>
+      <nav className='flex justify-between p-3 fixed left-0 right-0 bg-white z-10 md:p-4'>
+        <h1 className='text-blue-950 font-bold text-xl md:text-3xl'>Land Verification</h1>
         <div>
-             <button className='bg-green-700 cursor-pointer flex rounded px-2 py-1 text-sm' onClick={verificationNavigate}><FileText size={15} className='text-white text-sm' /> <span className='text-white'>Verify a Document</span></button>
+             <button className='bg-green-700 cursor-pointer flex rounded items-center px-2 py-1 text-sm md:p-3' onClick={verificationNavigate}><FileText size={15} className='text-white text-sm' /> <span className='text-white'>Verify a Document</span></button>
        
         </div>
       </nav>
@@ -40,9 +40,9 @@ const verificationNavigate=()=>{
 
 
       <div className='bg-blue-950 p-5 overflow-x-hidden w-full md:min-h-screen md:px-20 flex flex-col md:flex-row  '>
-        <div className='flex-1 flex flex-col  md:justify-around'>
+        <div className='flex-1 flex flex-col gap-y-7 mt-10'>
 
-           <div className='w-full mt-20 mb-5'>
+           <div className='w-full mt-10 mb-3'>
           <h1 className='text-white text-3xl text-nowrap md:text-6xl fmd:ont-semibold font-bold font-mono'>Verify Ownership.</h1>
           <h1 className='text-zinc-300 text-3xl text-nowrap md:text-6xl fmd:ont-semibold font-bold font-mono'>Verify Property.</h1>
           <h1 className='text-zinc-300 text-3xl text-nowrap md:text-6xl fmd:ont-semibold font-bold font-mono'>Verify Trust.</h1>
@@ -56,20 +56,20 @@ const verificationNavigate=()=>{
        
         </div>
 
-        <div className=' flex gap-x-7'><h1><span className='text-green-600 text-sm font-semibold'>#</span> <span className='text-zinc-300 text-sm'>Cryptographic hash check</span></h1>
-          <h1 className='flex items-center'><span><DatabaseCheck size={15} className='text-green-600 text-2xl font-semibold' /></span> <span className='text-zinc-300 text-sm'>Registry-linked records</span></h1>
+        <div className=' flex gap-x-7'><h1  className='flex justify-self-start gap-3 md:items-center'><span className='text-green-600 text-sm font-semibold'>#</span> <span className='text-zinc-300 text-sm'>Cryptographic hash check</span></h1>
+          <h1 className='flex justify-self-start gap-3 md:items-center'><span><DatabaseCheck size={15} className='text-green-600 text-2xl font-semibold' /></span> <span className='text-zinc-300 text-sm'>Registry-linked records</span></h1>
         </div>
         </div>
        
-<div className=' md:flex-1 mt-20 md:rotate-3'>
-<img src={deedpic} className=''/>
+<div className=' md:flex-1 mt-5 md:mt-20 md:rotate-3 md:h-full'>
+<img src={deedpic} className='w-full h-full  object-contain' style={{maxHeight:"600px"}}/>
 </div>
 
       </div>
-<div className='bg-zinc-200 w-full min-h-screen px-13'>
-<div className='pt-14'>
+<div className='bg-zinc-200 px-5 w-full min-h-screen md:px-13'>
+<div className='pt-5 md:pt-14'>
   <h1 className='text-black font-semibold text-4xl'>How verification works</h1>
-  <p className='text-zinc-600 text-xl max-w-3xl pt-4'>No account needed for a quick check. Upload a deed or scan its QR code and get a result you can rely on.</p>
+  <p className='text-zinc-600 text-lg md:text-xl max-w-3xl pt-4'>No account needed for a quick check. Upload a deed or scan its QR code and get a result you can rely on.</p>
 </div>
 <div className='flex flex-col md:flex-row justify-between gap-5 pt-10'>
 {
@@ -85,9 +85,6 @@ const verificationNavigate=()=>{
 
 </div>
 
-<div>
-<Deedqrcode/>
-</div>
 
     </div>
   )
