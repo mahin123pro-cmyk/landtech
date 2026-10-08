@@ -12,7 +12,10 @@ import TransferOwnerShip from './Pages/TransferOwnerShip.jsx'
 
 const rouet=createBrowserRouter([
   {
-  path:"/",element:<LandingPage/>},
+    path:"/",element:<App/>
+  },
+  {
+  path:"/landinpage",element:<LandingPage/>},
  { path:"/verification",element:<Verification/>},
  {
   path:"/verification/:id",element:<VerificationDetails/>

@@ -1,28 +1,18 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect } from 'react'
+import { api } from './api'
 
 function App() {
+  useEffect(()=>{
+    const getData=async()=>{
+     const res= await api.get("/")
+     console.log(res)
+    }
+    getData()
+  },[])
   return (
     <div>
-      <div>
-        <h1>Deed information</h1>
-        <div>
-          <label>
-            Deed Id :
-          </label>
-          <input type='text' placeholder='Enter Deed Id' name='deedId' value={deeds.deedId} onChange={handleChange} />
-        </div>
-        <div>
-          <label>
-            Owner Name :
-          </label>
-          <input type='text' placeholder='Enter Owner Name' name='ownerName' value={deeds.ownerName} onChange={handleChange} />
-        </div>
-
-      </div>
-
-      <div>
-
-      </div>
+     <h1>Hello</h1> 
     </div>
   )
 }
