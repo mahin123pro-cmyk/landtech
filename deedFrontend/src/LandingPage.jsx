@@ -26,7 +26,7 @@ const verificationNavigate=()=>{
 
   return (
     <div className=''>
-      <nav className='flex justify-between p-3 fixed left-0 right-0 bg-white'>
+      <nav className='flex justify-between p-3 fixed left-0 right-0 bg-white z-10'>
         <h1 className='text-blue-950 font-bold text-xl'>Land Verification</h1>
         <div>
              <button className='bg-green-700 cursor-pointer flex rounded px-2 py-1 text-sm' onClick={verificationNavigate}><FileText size={15} className='text-white text-sm' /> <span className='text-white'>Verify a Document</span></button>
