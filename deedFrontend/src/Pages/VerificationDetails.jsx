@@ -10,7 +10,7 @@ const VerificationDetails=()=> {
   const [details2,setDetails2]=useState({})
   useEffect(()=>{
 const data=async()=>{
- const res= await api.post(`/api/deedverification/${id}`)
+ const res= await api.post(`/api/deeddetails/${id}`)
 
  setDetails(res.data.message)
  console.log(res.data.message)
@@ -24,7 +24,7 @@ data()
 
   <div>
     {
-      details.ownershipHistory.map((e)=>{
+      details.ownershipHistory?.map((e)=>{
         return <div> 
           <h1>Owner Name :{e.ownerName}</h1>
           <h1>From Date :{e.fromDate}</h1>
