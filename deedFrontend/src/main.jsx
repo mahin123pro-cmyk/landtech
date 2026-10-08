@@ -15,9 +15,9 @@ const rouet=createBrowserRouter([
   {
     path:"/",element:<App/>
   },
-  {path:"/po",element:<Po/>}
-  {
-  path:"/landinpage",element:<LandingPage/>},
+  {path:"/po",element:<Po/>},
+  
+ { path:"/landinpage",element:<LandingPage/>},
  { path:"/verification",element:<Verification/>},
  {
   path:"/verification/:id",element:<VerificationDetails/>
