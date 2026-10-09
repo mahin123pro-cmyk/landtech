@@ -3,10 +3,10 @@ import { QRCodeSVG } from 'qrcode.react'
 
 function Deedqrcode({url}) {
    
-    const verificationUrl=`${url}`
+
   return (
     <div >
-      <QRCodeSVG value={verificationUrl} size={200} />
+      <QRCodeSVG value={url} size={200} />
       <p>Id</p>
     </div>
   )

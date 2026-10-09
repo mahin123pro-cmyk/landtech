@@ -19,12 +19,12 @@ data()
   },[id])
   return (
     <div>
-      <h1>{details.mouza}</h1>
+      <h1> {details &&details.mouza}</h1>
       <Deedqrcode url={`${window.location.origin}/verification/${id}`}/>
 
   <div>
     {
-      details.ownershipHistory?.map((e,index)=>{
+    details&& details.ownershipHistory?.map((e,index)=>{
         return <div key={index}> 
           <h1>Owner Name :{e.ownerName}</h1>
           <h1>From Date :{e.fromDate}</h1>
