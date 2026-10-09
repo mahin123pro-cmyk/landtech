@@ -20,7 +20,7 @@ data()
   return (
     <div>
       <h1>{details.mouza}</h1>
-      <Deedqrcode url={`${api}/verification/${id}`}/>
+      <Deedqrcode url={`${window.location.origin}/verification/${id}`}/>
 
   <div>
     {
