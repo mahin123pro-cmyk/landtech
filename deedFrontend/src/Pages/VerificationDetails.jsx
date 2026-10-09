@@ -24,8 +24,8 @@ data()
 
   <div>
     {
-      details.ownershipHistory?.map((e)=>{
-        return <div> 
+      details.ownershipHistory?.map((e,index)=>{
+        return <div key={index}> 
           <h1>Owner Name :{e.ownerName}</h1>
           <h1>From Date :{e.fromDate}</h1>
           <h1>To Date : {e.toDate}</h1>
